@@ -343,7 +343,7 @@
       {
         "line": {
           "markers": ["*package", "!", "/", ",", "="]
-        },"camelcase": ["error", { "properties": "never" }],
+        },
         "block": {
           "balanced": true,
           "markers": ["*package", "!", ",", ":", "::", "flow-include"],
