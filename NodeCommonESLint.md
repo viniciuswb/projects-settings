@@ -344,9 +344,7 @@
         "line": {
           "markers": ["*package", "!", "/", ",", "="]
         },"camelcase": ["error", { "properties": "never" }],
-        "block": {# eslint-settings
-
-```
+        "block": {
           "balanced": true,
           "markers": ["*package", "!", ",", ":", "::", "flow-include"],
           "exceptions": ["*"]
