@@ -1,3 +1,6 @@
+# commonjs-eslint-settings
+
+```
 {
   "env": {
     "node": true,
@@ -341,7 +344,9 @@
         "line": {
           "markers": ["*package", "!", "/", ",", "="]
         },"camelcase": ["error", { "properties": "never" }],
-        "block": {
+        "block": {# eslint-settings
+
+```
           "balanced": true,
           "markers": ["*package", "!", ",", ":", "::", "flow-include"],
           "exceptions": ["*"]
@@ -368,3 +373,4 @@
     ]
   }
 }
+```
