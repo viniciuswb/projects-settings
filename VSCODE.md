@@ -10,25 +10,15 @@
   "editor.lineHeight": 24,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[sql]": {
-    "editor.formatOnSave": false
-  },
+  "editor.formatOnSave": false,
 
   // Aplica linhas verticais para lembrar de quebrar linha
   // em códigos muito grandes
   "editor.rulers": [80, 120],
-  "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
-    "javascript",
-    "javascriptreact",
+    { "language": "javascript", "autoFix": true },
+    { "language": "javascriptreact", "autoFix": true },
     { "language": "typescript", "autoFix": true },
     { "language": "typescriptreact", "autoFix": true }
   ],
@@ -49,10 +39,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "explorer.confirmDelete": false,
-  "terminal.integrated.rendererType": "dom"
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  // Terminal Configs
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+
+  // Docker Configs
+  "docker.volumes.label": "VolumeName",
 }
 ```
